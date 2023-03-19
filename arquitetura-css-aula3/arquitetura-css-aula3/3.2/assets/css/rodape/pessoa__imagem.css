@@ -1,0 +1,7 @@
+.pessoa__imagem {
+    
+    overflow: hidden;
+    width: 261px;
+    height: 261px;
+    border-radius: 50%;
+}

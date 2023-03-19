@@ -1,0 +1,54 @@
+.rodape {
+    background-color: #C4C4C4;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    
+}
+
+.contato{
+    padding: 1.5rem;
+
+}
+
+.email {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
+.instagram {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+
+.whatsapp {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#25D366;
+    margin-right: .5rem;
+    border-radius: 5px;
+}
+
+.logo__whatsapp{
+    padding-top: 3px;
+    text-align: center;
+    font-size: 32px;
+    color: white;
+}
+
+.logo__instagram{
+    padding-top: 3px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}

@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #F0F2F5;
+}
+
+main {
+    background-color: #F0F2F5;
+
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 396px;
+    height: 456px;
+    margin: 20px;
+}
+
+.form__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 396px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 396px;
+    
+}
+
+.email__container, .pass__container {
+    padding: 6px 0;
+}
+
+#email:focus-within {
+    
+    border: 1px solid #1877f2;
+    box-shadow: 0px 0px 2px 0px #1876f2b9;
+}
+
+#pass:focus-within {
+    
+    border: 1px solid #1877f2;
+    box-shadow: 0px 0px 2px 0px #1876f2b9;
+}
+
+#email, #pass {
+    width: 332px;
+    height: 22px;
+    line-height: 16px;
+    font-size: 17px;
+    padding: 14px 16px;
+    border-radius: 6px;
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    outline: none;
+
+}
+
+.container__button {
+    padding: 6px 0px 0px;
+}
+.botao {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    padding: 0 16px;
+    width: 364px;
+
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 48px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.container__lostPass {
+    margin-top: 16px;
+}
+
+.lost__pass__link{
+    color: #1877f2;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.line {
+    width: 332px;
+    align-items: center;
+    border-bottom: 1px solid #d8dbdf;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+
+.newAcount__container {
+    text-align: center;
+    width: 166.16px;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+}
+
+.newAcount__container:hover{
+    background-color: #3aa126;
+}
+
+.newAcount {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+    color: #ffffff;
+    text-decoration: none;
+    
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+}
+
+.pageCreate__container {
+    margin-top: 28px;
+    text-align: center;
+}
+
+.pageCreate__link {
+    text-decoration: none;
+    color: #1c1e21;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.lost__pass__link:hover {
+    text-decoration: underline;
+}
+
+.texto__page {
+    border-top: none;
+    color: #1c1e21;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding-top: 0;
+}
+
+
+/*titulo*/
+
+.container__title {
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    width: 301px;
+}
+
+.facebook__sub {
+    font-size: 28px;
+    font-weight:500;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+}
+
+@media (max-width: 1015px){
+    .container__title{
+        text-align: center;
+        padding: 0px;
+    }
+
+    .form__container{
+        margin: 0px auto;
+    }
+    .facebook__sub{
+        padding: 0px;
+    }
+
+    .container{
+        padding: 20px;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 902px){
+    .container__title{
+        text-align: center;
+    }
+}
+
+@media (max-width: 530px){
+    .facebook__sub{
+        font-size: 20px;
+        width: 360px;
+    }
+}
+
+@media (max-width: 440px){
+    .form__container{
+        width: 340px;
+    }
+
+    #email, #pass, .botao{
+        width: 280px;
+    }
+}

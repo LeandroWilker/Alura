@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/contato.css">
         <link rel="stylesheet" href="css/institucional.css">
         <link rel="stylesheet" href="css/rodape.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <header class="cabecalho container">
@@ -58,15 +59,15 @@
             </section>
             <section class="diferenciais container">
                 <ul class="diferenciais__lista">
-                    <li class="diferenciais__item diferenciais_item--tempo">
+                    <li class="diferenciais__item diferenciais_item--tempo" data-aos="zoom-out-down" data-aos-duration="1000">
                         <h2 class="item__titulo ">Tempo</h2>
                         <p class="item__texto">Tempo é importante! Trabalhamos em ritmo acelerado, atendendo rigorosamente aos prazos.</p>
                     </li>
-                    <li class="diferenciais__item diferenciais__item--foco">
+                    <li class="diferenciais__item diferenciais__item--foco" data-aos="zoom-out-down" data-aos-duration="1500">
                         <h2 class="item__titulo">Foco</h2>
                         <p class="item__texto">Focamos no empreendimento! Oferecemos serviços de qualidade com preços acessíveis.</p>
                     </li>
-                    <li class="diferenciais__item diferenciais__item--especialista">
+                    <li class="diferenciais__item diferenciais__item--especialista" data-aos="zoom-out-down" data-aos-duration="2000">
                         <h2 class="item__titulo">Especialistas</h2>
                         <p class="item__texto">Equipe experiente e especializada! Testamos todos os produtos antes do lançamento.</p>
                     </li>
@@ -98,7 +99,7 @@
                 
             </section>
 
-            <section class="planos container">
+            <div  class="planos container" data-aos="fade-down" data-aos-duration="1000">
                 <h2 class="planos__titulo">Planos</h2>
                 <ul class="planos__cartoes">
                     <li class="cartao cartao--start">
@@ -111,6 +112,7 @@
                             <a href="plano.html" class="cartao__botao cartao__botao--start botao">Assinar plano</a>
                         </article>
                     </li>
+                
                     <li class="cartao cartao--ultra">
                         <h3 class="cartao__titulo">Ultra</h3>
                         <article class="cartao__conteudo">
@@ -133,7 +135,7 @@
                         </article>
                     </li>
                 </ul>
-            </section>
+            </div>
 
             <section class="contato container">
                 <h2 class="contato__titulo">Contato</h2>
@@ -192,5 +194,9 @@
             </nav>
 
         </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>

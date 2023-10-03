@@ -1,6 +1,5 @@
 .planos {
     background-color: var(--cinza-claro);
-    
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
@@ -80,7 +79,19 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.cartao--start:hover{
+    transform: scale(107%);
+    transition: 0.6s;
+}
 
+.cartao--ultra:hover{
+    transform: scale(107%);
+    transition: 0.6s;
+}
+.cartao--mega:hover{
+    transform: scale(107%);
+    transition: 0.6s;
+}
 .cartao--start {
     color: var(--planos-cartao-start);
 }

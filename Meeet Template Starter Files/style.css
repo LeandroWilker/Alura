@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Sen:wght@400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #013243;
+}
+
+.container{
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+}
+header .logo-content{
+    width: 70%;
+    padding: 20px 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+}
+
+
+.img-content .avatar1{
+    position: absolute;
+    top:8%;
+    left:10%;
+    width: 10rem;
+    
+}
+
+.img-content .avatar2{
+    position: absolute;
+    top:11%;
+    left:62%;
+    width: 10rem;
+    
+}
+
+.img-content .avatar3{
+    position: absolute;
+    top:3%;
+    left:75%;
+    width: 15rem;
+    
+}
+
+.img-content .avatar4{
+    position: absolute;
+    top:58%;
+    left:60%;
+    width: 12rem;
+    
+}
+
+.img-content .avatar5{
+    position: absolute;
+    top:50%;
+    left:83%;
+    width: 10rem;
+    
+}
+
+.img-content .avatar6{
+    position: absolute;
+    top:70%;
+    left:77%;
+    width: 14rem;
+    padding: 0 10px;
+    
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+
+h1{
+    color: #32F5C8;
+    font-family: 'Sen', sans-serif;
+    font-size: max(2rem, 10vw);
+    
+
+}
+
+p{
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: max(1rem, 1.1vw);
+    margin: 30px 0;
+}
+
+.button-link button{
+    border-radius: 5px;
+    border: none;
+    background-color: #32F5C8;
+    font-size: 17px;
+    font-family: 'Sen', sans-serif;
+    font-weight: 600;
+    height: 60px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.button-link button:hover{
+    background-color: #59ffd8;
+    cursor: pointer;
+}
+
+.twiter-link{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 60px;
+    
+}
+
+.twiter-link:hover{
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #32f5c89f;
+    
+}
+
+.twiter-link img{
+    padding-right: 20px;
+}
+
+@media  (max-width: 1450px){
+    .img-content .avatar1{
+        top:10%;
+        left:7%;        
+    }
+
+    .img-content .avatar2{
+        top: 12%;
+        left: 62%;
+        
+    }
+}
+
+@media  (max-width: 999px){
+  
+
+    .img-content .avatar1{
+        top:12%;
+        left:3%;        
+    }
+    
+    .img-content .avatar2{
+        top: 16%;
+        left: 62%;
+        width: 8rem;
+        
+    }
+    
+    .img-content .avatar3{
+        top: 5%;
+        left: 80%;
+        width: 9rem; 
+    }
+    
+    .img-content .avatar4{
+        top: 46%;
+        left: 50%; 
+    }
+    
+    .img-content .avatar5{      
+        top: 42%;
+        left:82%;
+        width: 8rem;
+    }
+    
+    .img-content .avatar6{
+        left:70%;
+        width: 15rem;
+        
+    }
+
+    .twiter-link{
+        margin-top: 100px;
+    }
+
+}
+
+@media  (max-width: 720px){
+   
+    .img-content .avatar1{
+        width: 25%;
+        top:8%;
+        left:24%;
+        width: 7rem;
+        
+    }
+    
+    .img-content .avatar2{
+        
+        display: none;
+    }
+    
+    .img-content .avatar3{
+        width: 35%;
+        top:2%;
+        left:58%;
+        width: 11rem;
+        padding: 0 20px;
+    }
+    
+    .img-content .avatar4{
+        
+        top:55%;
+        left:42%;
+        width: 50%;
+    }
+    
+    .img-content .avatar5{
+        display: none;
+    }
+    
+    .img-content .avatar6{
+        display: none;
+    }
+
+    .button-link button{
+        font-size: 1.4rem;
+        font-weight: 700;
+        height: 80px;
+        padding: 0 20px;
+        
+    }
+
+    .twiter-link{
+        padding-top: 150px;
+    }
+
+}
+
+@media  (max-width: 375px){
+   
+    .img-content .avatar1{
+        
+        top:11%;
+        left:12%;
+        
+    }
+    
+    .img-content .avatar3{
+        
+        top:9%;
+        left:50%;
+    }
+    
+    .img-content .avatar4{
+        
+        top:53%;
+        right:5%;
+        width: 60%;
+        padding: 0 20px;
+    }
+    
+    
+    .button-link button{
+        font-size: 1.2rem;
+        font-weight: 500;
+        height: 70px;
+        padding: 0 10px;
+        
+    }
+
+    .twiter-link{
+        padding-top: 120px;
+    }
+
+    h1{
+        font-size: 50px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
+

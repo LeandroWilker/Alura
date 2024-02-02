@@ -1,0 +1,136 @@
+.generos-titulo{
+    color: #ffffff;
+    font-size: 3vw;
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000 100%);
+}
+
+.fotos{
+   width: 100%;
+   z-index: -1;
+}
+.imagens .gallery{
+    position: relative;
+}
+
+
+/*#img-g1{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width:100%;
+    height:auto;
+    background-image: url('https://media.ray-ban.com/cms/resource/image/773098/portrait_ratio225x266/810/958/11a128b2eeb914a69facbef82931ef84/E44F3B424B566DDB577EB722D0D17647/rb-genuinesince-hp-bucaman-new-d.jpg');
+}
+
+#img-g2{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width: 100%;
+    height: auto;
+    background-image: url('https://media.ray-ban.com/cms/resource/image/773092/portrait_ratio225x266/810/958/3dc05d5e1c0de48d30fed43b296597e3/6DFBD57ADED1DD15113A143BD79D1483/rb-genuinesince-hp-bucawoman-new-d.jpg');
+}
+
+#img-g3{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    width:100%;
+    height: auto;
+    background-image: url('https://media.ray-ban.com/cms/resource/image/790300/portrait_ratio225x266/810/958/bccc8dd5ff96aaea591c342fd1dd237e/BABC01252F94C94EAD461A76C4AD49C7/rb-bts-kids-bucagender-d.jpg');
+}
+*/
+.form-control::-webkit-input-placeholder {
+    color: blue;
+    font-size: 11pt;
+ }
+
+.form-control{
+    min-width:250px;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+
+#botao-buscar{
+    background-color: #fff128;
+    color: blue;
+}
+.navbar-toggler-icon{
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    border: 2px solid yellow;
+}
+
+.promocao{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+.promocao:hover{
+    text-decoration: underline;
+}
+
+p{
+    margin: 0;
+}
+
+#generos{
+    width: 636.33px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.imagens{
+    display: flex;
+    background:linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000 100%);
+}
+
+.img-logo{
+    width: 200px;
+    border-radius: 5px;
+}
+
+
+
+#links{
+    color: #fff128;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.cards-wrapper{
+    display: flex;
+}
+
+.card {
+    margin: 0 .5em;
+}

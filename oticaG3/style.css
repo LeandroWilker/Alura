@@ -134,3 +134,74 @@ a{
 .card {
     margin: 0 .5em;
 }
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #2e43ff;
+    gap: 20px;
+}
+
+.social-icons i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5ff63;
+    color: #000000;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+/* FACEBOOK ICON STYLES */
+.facebook-link i:hover{
+    color: #1c64ff;
+    background-color: #ffffff;
+}
+
+/* WHATSAPP ICON STYLES */
+.whatapp-link i:hover{
+    background-color:#25D366;
+    color: #fff;
+}
+
+/* INSTAGRAM ICON STYLES */
+
+.instagram-link i:hover{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: #fff;
+}
+
+/* YOUTUBE ICON STYLES */
+.youtube-link i:hover{
+    background-color:#eb1717;
+    color: #fff;
+}
+
+/* TWITTER-X ICON STYLES */
+.twitterX-link i:hover{
+    background-color:#ffffff;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #ebff3b;
+    color: #000000;
+}
+
+.copy a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: #000000;
+    font-weight: 500;
+}
+
+
+

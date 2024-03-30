@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .generos-titulo{
     color: #ffffff;
     font-size: 3vw;
@@ -9,6 +11,156 @@
     background:linear-gradient(180deg, rgba(0, 0, 0, 0) 9.74%, #000 100%);
 }
 
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(242, 255, 0, 0.904) 64%, rgba(55, 82, 255, 0.664) 100%), url(assets/img/bg-banner2.jpg) no-repeat ;
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-container{
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.logo{
+    min-width: 300px;
+}
+
+.text-container-banner{
+    max-width: 500px;
+}
+
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.subtitle{
+    font-weight: 500;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.botao-saberMais{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #015FCB;
+    border: none;
+    width: 260px;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-size: 25px;
+    color: #fff;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.281);
+}
+
+.botao-saberMais i{
+    padding: 5px;
+}
+
+.botao-saberMais:hover{
+    transition: 0.4s;
+    background-color: #3c8aff;
+}
+.text-queroSaber{
+    font-size: 25px;
+    color: #fff;
+    margin: 0;
+}
+
+
+.modelo-banner{
+    min-width: 190px;
+    border-radius: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 250px;
+    background-color: #0D6EFD;
+}
+
+@media (max-width: 600px){
+    .logo{
+      width: 200px; 
+    }
+
+    .title{
+        font-size: 25px;
+        text-align:left;
+        
+    }
+
+    .subtitle{
+        font-size: 15px;
+    }
+
+    .botao-saberMais{
+        width: 165px;
+        font-size: 15px;
+    }
+
+    .text-queroSaber{
+        font-size: 15px;
+    }
+}
+
+.vantagens{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.cards-vantagens{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 172px;
+    width: 260px;
+    border: none;
+    border-radius: 10px;
+    box-shadow:3px 3px 10px 5px rgba(17, 17, 17, 0.075) ; 
+}
+.cards span{
+    font-size:80px;
+}
+
+.vantagens-title{
+    font-size: 40px;
+    font-weight: 800;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.card-text{
+    font-size: 20px;
+}
+
+
 .fotos{
    width: 100%;
    z-index: -1;
@@ -18,72 +170,32 @@
 }
 
 
-/*#img-g1{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: auto;
-    width:100%;
-    height:auto;
-    background-image: url('https://media.ray-ban.com/cms/resource/image/773098/portrait_ratio225x266/810/958/11a128b2eeb914a69facbef82931ef84/E44F3B424B566DDB577EB722D0D17647/rb-genuinesince-hp-bucaman-new-d.jpg');
-}
-
-#img-g2{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: auto;
-    width: 100%;
-    height: auto;
-    background-image: url('https://media.ray-ban.com/cms/resource/image/773092/portrait_ratio225x266/810/958/3dc05d5e1c0de48d30fed43b296597e3/6DFBD57ADED1DD15113A143BD79D1483/rb-genuinesince-hp-bucawoman-new-d.jpg');
-}
-
-#img-g3{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: auto;
-    width:100%;
-    height: auto;
-    background-image: url('https://media.ray-ban.com/cms/resource/image/790300/portrait_ratio225x266/810/958/bccc8dd5ff96aaea591c342fd1dd237e/BABC01252F94C94EAD461A76C4AD49C7/rb-bts-kids-bucagender-d.jpg');
-}
-*/
 .form-control::-webkit-input-placeholder {
-    color: blue;
+    color: #0D6EFD;
     font-size: 11pt;
  }
 
 .form-control{
     min-width:250px;
     color: #fff;
-    border: 3px solid #fff;
+    border: 3px;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.253);
+}
+
+.form-control::placeholder{
+    color: #fff;
 }
 
 
 #botao-buscar{
-    background-color: #fff128;
-    color: blue;
+    background-color: #0D6EFD;
+    color: rgb(255, 255, 255);
 }
 .navbar-toggler-icon{
-    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%286, 100, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 .navbar-toggler{
-    border: 2px solid yellow;
+    border: 2px solid #0D6EFD;
 }
 
 .promocao{
@@ -122,25 +234,30 @@ a{
 
 
 #links{
-    color: #fff128;
+    color: #0D6EFD;
     font-size: 17px;
     font-weight: 500;
+    border: 1px black;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.349);
+    padding: 0;
 }
-
-.cards-wrapper{
-    display: flex;
+.nav-item{
+    height:27px;
+    margin: 10px;
 }
-
-.card {
-    margin: 0 .5em;
+.nav-item:hover{
+    border-bottom: 3px solid #0D6EFD;
+    padding: 0;
+    transition: 0.1s;
+    
 }
 
 .social-icons{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 200px;
-    background-color: #2e43ff;
+    height: 60px;
+    background-color: #0D6EFD;
     gap: 20px;
 }
 
@@ -148,7 +265,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f5ff63;
+    
     color: #000000;
     font-size: 30px;
     height: 50px;
@@ -191,7 +308,6 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
     background-color: #ebff3b;
     color: #000000;
 }
@@ -203,5 +319,11 @@ a{
     font-weight: 500;
 }
 
+#navcolor{
+    background-color: #ebff3b;
+}
 
+.card-container{
+    background-color: #333333;
+}
 

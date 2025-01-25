@@ -15,7 +15,7 @@ header{
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(242, 255, 0, 0.904) 64%, rgba(55, 82, 255, 0.664) 100%), url(assets/img/bg-banner2.jpg) no-repeat ;
+    background: linear-gradient(180deg, rgba(242, 255, 0, 0.904) 64%, rgba(55, 82, 255, 0.664) 100%), url() no-repeat ;
     background-size: cover;
     flex-direction: column;
     align-items: center;
@@ -30,7 +30,7 @@ header{
 }
 
 .logo{
-    min-width: 300px;
+    width: 470px;
 }
 
 .text-container-banner{
@@ -92,7 +92,7 @@ header{
 
 @media (max-width: 600px){
     .logo{
-      width: 200px; 
+      width: 300px; 
     }
 
     .title{

@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 
 .generos-titulo{
     color: #ffffff;
@@ -22,44 +29,53 @@ header{
 }
 
 .banner-container{
-    margin: 10px auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 90%;
+    flex-direction: column;
+    width: 80%;
 }
 
 .logo{
-    width: 470px;
+    width: 50%; 
 }
 
-.text-container-banner{
-    max-width: 500px;
-}
+
 
 .title{
-    font-size: 50px;
+    font-size: 3rem;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
+    margin:20px;
+    
 }
 
 .subtitle{
     font-weight: 500;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-family: "Poppins", sans-serif;
+    margin:auto 20px;
+    text-align:justify;
 }
 
 
 
 .botao-saberMais{
+    transition: 0.4s;
     display: flex;
     justify-content:center;
     align-items: center;
     background-color: #015FCB;
     border: none;
     width: 260px;
+    height: 70px;
     border-radius: 20px;
-    margin-top: 30px;
+    top: 1;
+    left: 1;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    position: absolute;
     font-size: 25px;
     color: #fff;
     box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.281);
@@ -70,7 +86,6 @@ header{
 }
 
 .botao-saberMais:hover{
-    transition: 0.4s;
     background-color: #3c8aff;
 }
 .text-queroSaber{
@@ -92,35 +107,36 @@ header{
 
 @media (max-width: 600px){
     .logo{
-      width: 300px; 
+      width: 300px;
+       
     }
 
     .title{
-        font-size: 25px;
-        text-align:left;
-        
+        font-size: 35px;
+        text-align: left;  
     }
 
     .subtitle{
-        font-size: 15px;
+        font-size: 20px;
+        text-align: left;
     }
 
     .botao-saberMais{
-        width: 165px;
-        font-size: 15px;
+        width: 155px;
+        height: 40px;
+        font-size: 20px;
     }
 
     .text-queroSaber{
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
-.vantagens{
+.vantagens-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px 0;
 }
 
 .cards-vantagens{
@@ -148,12 +164,13 @@ header{
     font-size:80px;
 }
 
-.vantagens-title{
-    font-size: 40px;
+.sub-title{
+    font-size: ; /* Nunca será menor que 16px */
     font-weight: 800;
     font-family: "Roboto", sans-serif;
-    margin-bottom: 60px;
+    margin: 60px auto;
     text-align: center;
+    max-width: 600px;
 }
 
 .card-text{
@@ -163,11 +180,8 @@ header{
 
 .fotos{
    width: 100%;
-   z-index: -1;
 }
-.imagens .gallery{
-    position: relative;
-}
+
 
 
 .form-control::-webkit-input-placeholder {
@@ -203,14 +217,11 @@ header{
     color: #fff;
     text-align: center;
     padding: 12px;
+    margin: 0;
 }
 
 .promocao:hover{
     text-decoration: underline;
-}
-
-p{
-    margin: 0;
 }
 
 #generos{
@@ -251,6 +262,60 @@ a{
     transition: 0.1s;
     
 }
+   
+.map{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .responsive-iframe {
+    width: 60%;
+    height: 450px;
+    border-radius: 5px;
+  }
+
+  .func , .address{
+    font-size:1rem;
+    width: 300px;
+  }
+
+  .address-container{
+    gap: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: px;
+  }
+
+  
+  @media (max-width: 1300px) {
+    
+
+      
+
+          
+}
+
+@media (max-width: 650px) {
+    
+
+      .func , .address{
+        width: 35vw;
+      }
+
+      .responsive-iframe{
+        width: 90%;
+      }
+    
+          
+}
+
+
 
 .social-icons{
     display: flex;
@@ -305,16 +370,13 @@ a{
 }
 
 .copy{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: #ebff3b;
     color: #000000;
 }
 
 .copy a{
     text-decoration: none;
-    margin-left: 5px;
     color: #000000;
     font-weight: 500;
 }

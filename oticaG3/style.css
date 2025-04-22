@@ -373,6 +373,7 @@ a{
     text-align: center;
     background-color: #ebff3b;
     color: #000000;
+    margin: 0;
 }
 
 .copy a{

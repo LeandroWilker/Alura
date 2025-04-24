@@ -5,6 +5,25 @@
     box-sizing: border-box;
 }
 
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Tamanho inicial */
+        opacity: 1; /* Opacidade inicial */
+    }
+    50% {
+        transform: scale(1.1); /* Aumenta o tamanho */
+        opacity: 0.8; /* Diminui a opacidade */
+    }
+    100% {
+        transform: scale(1); /* Retorna ao tamanho inicial */
+        opacity: 1; /* Retorna à opacidade inicial */
+    }
+}
+
+.logomarcas{
+    width: 150px;
+}
+
 
 
 .generos-titulo{
@@ -22,7 +41,7 @@ header{
     height: 100vh;
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, rgba(242, 255, 0, 0.904) 64%, rgba(55, 82, 255, 0.664) 100%), url() no-repeat ;
+    background-color: rgba(242, 255, 0, 0.904);
     background-size: cover;
     flex-direction: column;
     align-items: center;
@@ -60,34 +79,52 @@ header{
 
 
 
-.botao-saberMais{
-    transition: 0.4s;
+.botao{
     display: flex;
-    justify-content:center;
     align-items: center;
-    background-color: #015FCB;
-    border: none;
-    width: 260px;
-    height: 70px;
-    border-radius: 20px;
     top: 1;
     left: 1;
     bottom: 0;
     right: 0;
     margin: 20px;
-    position: absolute;
+    position: fixed;
     font-size: 25px;
     color: #fff;
-    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.281);
+}
+
+.botao p{
+    font-size: 15px;
+    color: #000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.247);
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    padding:6px;
+    border-radius: 5px;
+    box-shadow: 2px 6px 8px 0px rgba(0, 0, 0, 0.192);
 }
 
 .botao-saberMais i{
-    padding: 5px;
+    background-color: #25D366;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 35px;
+    margin-left: 10px;
+    box-shadow: 3px 6px 4px 0 rgba(0, 0, 0, 0.226);
+    transition: 0.5s;
+    animation: pulse 1.5s infinite; /* Duração da animação e repetição infinita */
+    
+}
+.botao-saberMais i:hover{
+    transform: scale(1.1);
+    animation: none;
+    background-color: #3ffc84;
 }
 
-.botao-saberMais:hover{
-    background-color: #3c8aff;
-}
 .text-queroSaber{
     font-size: 25px;
     color: #fff;
@@ -290,6 +327,7 @@ a{
     justify-content: center;
     align-items: center;
     width: px;
+    margin: 20px auto;
   }
 
   

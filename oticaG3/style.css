@@ -83,10 +83,11 @@ header{
     display: flex;
     align-items: center;
     top: 1;
-    left: 1;
+    left:1;
     bottom: 0;
     right: 0;
     margin: 20px;
+    margin-bottom: 30px;
     position: fixed;
     font-size: 25px;
     color: #fff;
@@ -158,11 +159,7 @@ header{
         text-align: left;
     }
 
-    .botao-saberMais{
-        width: 155px;
-        height: 40px;
-        font-size: 20px;
-    }
+    
 
     .text-queroSaber{
         font-size: 13px;
@@ -319,15 +316,14 @@ a{
     font-size:1rem;
     width: 300px;
   }
-
-  .address-container{
-    gap: 40px;
-    
+  .address-content{
+    width: 200px;
+  }
+  .address-cont{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: px;
-    margin: 20px auto;
+    width: 100%;
   }
 
   

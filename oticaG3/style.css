@@ -312,19 +312,34 @@ a{
     border-radius: 5px;
   }
 
+  .address-banner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .func , .address{
     font-size:1rem;
-    width: 300px;
   }
   .address-content{
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    min-width: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+
   .address-cont{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    gap:30px;
   }
+
+
 
   
   @media (max-width: 1300px) {
@@ -336,18 +351,28 @@ a{
 }
 
 @media (max-width: 650px) {
-    
-
-      .func , .address{
-        width: 35vw;
-      }
-
+       
       .responsive-iframe{
         width: 90%;
       }
     
           
 }
+
+@media (max-width: 500px) {
+    
+
+    .address-content, h5 span{
+      font-size: ;
+    }
+
+    .responsive-iframe{
+      width: 90%;
+    }
+  
+        
+}
+
 
 
 

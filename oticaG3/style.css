@@ -52,7 +52,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
 }
 
 .logo{
@@ -142,28 +142,39 @@ header{
     border-bottom-right-radius: 250px;
     background-color: #0D6EFD;
 }
+@media (max-width: 900px){
 
-@media (max-width: 600px){
     .logo{
-      width: 300px;
-       
-    }
-
+        width: 50%;
+         
+      }
+  
+      .title{
+          font-size: 26px;
+          text-align: left;  
+      }
+  
+      .subtitle{
+          font-size: 14px;
+          text-align: left;
+      }
+}
+@media (max-width: 667px){
+    
     .title{
-        font-size: 35px;
+        font-size: 24px;
         text-align: left;  
     }
 
     .subtitle{
-        font-size: 20px;
+        font-size: 13px;
         text-align: left;
     }
+   
 
     
 
-    .text-queroSaber{
-        font-size: 13px;
-    }
+   
 }
 
 .vantagens-container{

@@ -11,20 +11,18 @@
         opacity: 1; /* Opacidade inicial */
     }
     50% {
-        transform: scale(1.1); /* Aumenta o tamanho */
+        transform: scale(1.3); /* Aumenta o tamanho */
         opacity: 0.8; /* Diminui a opacidade */
     }
     100% {
         transform: scale(1); /* Retorna ao tamanho inicial */
         opacity: 1; /* Retorna à opacidade inicial */
-    }
+    }       
 }
 
 .logomarcas{
     width: 150px;
 }
-
-
 
 .generos-titulo{
     color: #ffffff;
@@ -62,7 +60,7 @@ header{
 
 
 .title{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     margin:20px;
@@ -83,14 +81,14 @@ header{
     display: flex;
     align-items: center;
     top: 1;
-    left:1;
+    left:0;
     bottom: 0;
     right: 0;
     margin: 20px;
     margin-bottom: 30px;
     position: fixed;
-    font-size: 25px;
     color: #fff;
+    width: fit-content;
 }
 
 .botao p{
@@ -107,13 +105,13 @@ header{
 .botao-saberMais i{
     background-color: #25D366;
     color: #fff;
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 35px;
+    font-size: 30px;
     margin-left: 10px;
     box-shadow: 3px 6px 4px 0 rgba(0, 0, 0, 0.226);
     transition: 0.5s;
@@ -441,14 +439,14 @@ a{
 
 .copy{
     text-align: center;
-    background-color: #ebff3b;
-    color: #000000;
+    background-color: #0f0f0f;
+    color: #ffffff;
     margin: 0;
 }
 
 .copy a{
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     font-weight: 500;
 }
 

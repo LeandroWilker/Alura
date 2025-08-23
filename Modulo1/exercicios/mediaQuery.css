@@ -1,0 +1,34 @@
+::-webkit-scrollbar {
+  width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Altera a cor do track (o "trilho" da barra) */
+::-webkit-scrollbar-track {
+  background: #858585; /* Cor de fundo do track */
+}
+
+/* Altera a cor do thumb (a parte que se move) */
+::-webkit-scrollbar-thumb {
+  background: #c5c5c5; /* Cor da thumb */
+}
+
+/* Altera a cor do thumb ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffae00; /* Cor da thumb ao passar o mouse */
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 800px){
+    header{
+        flex-direction: column;
+    }
+
+    #logo{
+        margin-bottom: 20px;
+    }
+
+    nav{
+        margin-bottom: 5px;
+    }
+
+}

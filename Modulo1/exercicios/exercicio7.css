@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#exercicio-7{
+    background-color: rgb(255, 166, 0);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+#exercicio-7 #cabecalho{
+    margin-bottom: 20px;
+    color: rgb(0, 0, 117);
+}
+
+.texto {
+    color: gray;
+    padding: 20px;
+}
+
+.texto:last-child{
+    color: black;
+    padding: 20px;
+}

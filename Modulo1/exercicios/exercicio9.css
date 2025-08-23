@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logo{
+    width: 10rem;
+}
+#exercicio-9{
+    background-color: yellow;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+#exercicio-9 h1{
+    color: blue;
+}
+
+#exercicio-9 p{
+    color:green;
+    margin: 50px;
+}

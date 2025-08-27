@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#exercicio-11{
+    background-color: rgb(255, 213, 99);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+.noticia {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+
+.titulo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+.texto {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+
+#autor {
+  font-size: 0.9em;
+  color: gray;
+}

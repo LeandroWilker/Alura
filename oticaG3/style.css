@@ -80,13 +80,11 @@ header{
 .botao{
     display: flex;
     align-items: center;
-    top: 1;
-    left:0;
-    bottom: 0;
-    right: 0;
+    top: 85%;
+    left: 0%;
     margin: 20px;
     margin-bottom: 30px;
-    position: fixed;
+    position: absolute;
     color: #fff;
     width: fit-content;
 }
@@ -414,7 +412,7 @@ a{
 }
 
 /* WHATSAPP ICON STYLES */
-.whatapp-link i:hover{
+.whatsapp-link i:hover{
     background-color:#25D366;
     color: #fff;
 }

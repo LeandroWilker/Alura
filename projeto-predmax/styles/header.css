@@ -1,0 +1,150 @@
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:20px;
+  background: #fff;
+  position: fixed; /* fixa no topo da viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100; /* acima do conteúdo */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.24);
+}
+
+.header-content{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 16rem;
+}
+
+/* Evita que o conteúdo principal fique escondido atrás do header fixo */
+main{
+  padding-top: var(--header-height);
+}
+
+/* Ajuste específico para o carousel: empurra o carousel para baixo e centraliza */
+.carousel-container{
+  margin-top: calc(var(--header-height) + 10px);
+  display: flex;
+  justify-content: center;
+}
+
+/* === Menu Desktop === */
+.menu-desktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-desktop ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.menu-desktop ul li {
+  transition: 0.2s;
+}
+
+.menu-desktop ul li:hover {
+  transform: scale(1.1);
+}
+.menu-desktop ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.menu-desktop ul li a:hover {
+  color: var(--secondary-color);
+  border-bottom:var(--secondary-color) 2px solid;
+}
+
+.btn-contato button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-contato button:hover {
+  background: #0056b3;
+}
+
+/* === Menu Hamburguer === */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* === Responsivo === */
+@media (max-width: 900px) {
+  .menu-desktop {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-desktop ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .menu-desktop.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .btn-contato {
+    display: none;
+  }
+
+  /* Animação X no menu */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(7px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px);
+  }
+}

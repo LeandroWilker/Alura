@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>PREDMAX | Soluções Inteligentes</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/img-logo/favicon-16x16.png"
+      type="image/x-icon"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/banner.css" />
+    <link rel="stylesheet" href="styles/botao-saber-mais.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/quem-somos.css">
+    <link rel="stylesheet" href="styles/card.css">
+
+    <!-- animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- JavaScript -->
+    <script defer src="scripts/header.js"></script>
+    <script defer src="scripts/banner.js"></script>
+    <script defer src="scripts/services.js"></script>
+  </head>
+  <body>
+    <!-- botão fale conosco -->
+    <!-- <div class="botao">
+      <p class="text-queroSaber">Fale Conosco</p>
+      <a
+        href="https://wa.me/5581984224697"
+        target="_blank"
+        class="botao-saberMais"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </div> -->
+
+    <!-- topo do site -->
+    <header>
+      <div class="header-content">
+        <!-- place navbar here -->
+        <div class="logo">
+          <a href="#">
+            <img
+              src="assets/img/img-logo/predmax-logo.png"
+              alt="logo da Predmax"
+            />
+          </a>
+        </div>
+
+        <!-- Botão hamburguer -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- menu -->
+        <nav class="menu-desktop" id="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#serviços">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#quem somos">Quem somos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- banner carrousel -->
+      <section class="carrossel">
+        <div class="slides">
+          <div class="slide ativo">
+            <img src="assets/img/img-banner/banner1.png" alt="Banner 1" class="banner-image" loading="lazy" decoding="async" />
+            <div class="slide-content">        
+              <h2 class="title">
+                Soluções completas em manutenção predial
+              </h2>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/img/img-banner/banner2.png" alt="Banner 2" class="banner-image" loading="lazy" decoding="async" />
+            <div class="slide-content">
+              
+              <h2 class="title">
+                Tratamento de água para piscinas e sistemas prediais
+              </h2>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/img/img-banner/banner3.png" alt="Banner 3" class="banner-image" loading="lazy" decoding="async" />
+            <div class="slide-content">
+              
+              <h2 class="title">
+                Serviços de instalação e manutenção preventiva
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn anterior">&#10094;</button>
+        <button class="btn proximo">&#10095;</button>
+
+        <div class="indicadores">
+          <span class="dot ativo"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+      <!-- fim banner carrousel -->
+
+      <!-- seção serviços -->
+      <section id="serviços" class="services-section">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="services-container">
+          <button class="services-btn prev" aria-label="Anterior">
+            &#10094;
+          </button>
+          <div class="services-viewport">
+            <div class="services-track">
+              <div class="service-card">
+                <div class="card-textContent">
+                  <h3 class="service-title">Manutenção Predial</h3>
+                  <p class="service-description">
+                    Serviços de manutenção preventiva e corretiva para edifícios
+                    residenciais e comerciais.
+                  </p>
+                  <a href="#" class="service-link">Saiba Mais</a>
+                </div>
+              </div>
+              <div class="service-card">
+                <div class="card-textContent">
+                  <h3 class="service-title">Piscinas</h3>
+                  <p class="service-description">
+                    Limpeza, tratamento e manutenção de piscinas para garantir
+                    água cristalina e saudável.
+                  </p>
+                </div>
+                <a href="#" class="service-link">Saiba Mais</a>
+              </div>
+              <div class="service-card">
+                <div class="card-textContent">
+                  <h3 class="service-title">Ar Condicionado</h3>
+                  <p class="service-description">
+                    Instalação, manutenção e reparo de sistemas de ar condicionado
+                    para ambientes confortáveis.
+                  </p>
+                </div>
+                <a href="#" class="service-link">Saiba Mais</a>
+              </div>
+              <div class="service-card">
+                <div class="card-textContent">
+                  <h3 class="service-title">Elétrica</h3>
+                  <p class="service-description">
+                    Serviços elétricos residenciais e comerciais, incluindo
+                    instalações e reparos.
+                  </p>
+                </div>
+                <a href="#" class="service-link">Saiba Mais</a>
+              </div>
+              <div class="service-card">
+                <div class="card-textContent">
+                  <h3 class="service-title">Hidráulica</h3>
+                  <p class="service-description">
+                    Soluções em sistemas hidráulicos, desde reparos até
+                    instalações completas.
+                  </p>
+                </div>
+                <a href="#" class="service-link">Saiba Mais</a>
+              </div>
+              <div class="service-card">
+                <div class="card-textContent">
+                  <h3 class="service-title">Jardinagem</h3>
+                  <p class="service-description">
+                    Cuidados e manutenção de jardins para ambientes verdes e
+                    agradáveis.
+                  </p>
+                </div>
+                <a href="#" class="service-link">Saiba Mais</a>
+              </div>
+            </div>
+          </div>
+          <button class="services-btn next" aria-label="Próximo">
+            &#10095;
+          </button>
+        </div>
+      </section>
+
+      <!-- fim seção serviços -->
+
+      <!-- seção quem somos -->
+      <section id="quem-somos" class="quem-somos-section">
+        <section class="hero" aria-label="Quem Somos PREDMAX">
+          <div class="brand">
+            <div>
+              <h2 class="section-title">Quem Somos</h2>
+            </div>
+          </div>
+
+          <p class="lead">
+            Somos uma empresa especializada em serviços para condomínios,
+            oferecendo soluções completas e integradas em
+            <strong
+              >instalações elétricas, ar-condicionado, hidráulica,
+              jardinagem</strong
+            >
+            e <strong>pintura</strong>. Atuamos com equipe qualificada, foco em
+            segurança, eficiência e atendimento personalizado.
+          </p>
+
+          
+        </section>
+
+        <div class="grid" style="margin-top: 20px">
+          <article class="card">
+            <h3>Por que escolher a PREDMAX?</h3>
+            <p>
+              Unimos tecnologia, processos padronizados e mão de obra
+              especializada para entregar serviços com qualidade e
+              custo-benefício. Priorizamos a segurança, o cumprimento de prazos
+              e a comunicação clara com síndicos e administradoras.
+            </p>
+          </article>
+
+          <aside class="card">
+            <h3>Nossos diferenciais</h3>
+            <ul style="margin: 0; padding-left: 18px; color: var(--muted)">
+              <li>Equipe técnica qualificada e treinada.</li>
+              <li>Atendimento personalizado e planejamento preventivo.</li>
+              <li>Uso de materiais certificados e práticas sustentáveis.</li>
+              <li>Relatórios e orçamentos transparentes.</li>
+            </ul>
+          </aside>
+        </div>
+
+        <section class="card" style="margin-top: 18px">
+          <h3>Missão, Visão e Valores</h3>
+          <div class="mv-list">
+            <div class="mv-item">
+              <b>Missão</b>
+              <div>
+                Oferecer soluções inteligentes e integradas em manutenção
+                predial, garantindo segurança, eficiência e conforto para
+                condomínios.
+              </div>
+            </div>
+            <div class="mv-item">
+              <b>Visão</b>
+              <div>
+                Ser referência em serviços para condomínios, destacando-se pela
+                inovação, confiança e excelência operacional.
+              </div>
+            </div>
+            <div class="mv-item">
+              <b>Valores</b>
+              <div>
+                Compromisso, Qualidade, Inovação, Transparência e
+                Sustentabilidade.
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <!-- fim seção quem somos -->
+    </main>
+  </body>
+</html>
